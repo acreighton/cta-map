@@ -34,14 +34,6 @@
             var loc    = data[i].Location;
                 latlng = {};
 
-            for (key in data[i]) {
-                if (data[i][key] === 'true') {
-                    data[i][key] = true;
-                } else if (data[i][key] === 'false') {
-                    data[i][key] = false;
-                }
-            }
-
             loc = loc.replace(/[\(|\)|' ']/g, '');
             latlng['lat']  = Number(loc.split(',')[0]);
             latlng['long'] = Number(loc.split(',')[1]);
