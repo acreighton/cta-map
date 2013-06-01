@@ -84,7 +84,7 @@
     }
 
     $.ajax({
-        url : "data.json",
+        url : "data/data.json",
         dataType : 'json',
         success : map.init,
         error : showError
